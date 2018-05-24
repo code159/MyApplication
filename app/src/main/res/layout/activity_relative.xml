@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--相对布局-->
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#000000"
+        ></View>
+    <View
+        android:id="@+id/view2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/view1"
+        android:background="#FF00FF"
+        android:layout_alignParentBottom="false"
+        android:layout_toRightOf="@id/view1"
+        ></View>
+
+    <!--相对布局内嵌线性布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/view2"
+        android:background="#CDBE70"
+        android:padding="15dp"
+        >
+        <View
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#000000"
+            android:layout_weight="1"
+            ></View>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#000000"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            ></View>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
