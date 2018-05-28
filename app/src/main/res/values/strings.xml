@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">我的应用</string>
     <string name="title_activity_text">文本控件</string>
+    <string name="title_activity_button">按钮控件</string>
 </resources>

@@ -13,11 +13,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button bt1 = findViewById(R.id.bt1);
+        Button bt2 = findViewById(R.id.bt2);
         bt1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 //跳转到TextView演示介面
                 Intent intent = new Intent(MainActivity.this,TextViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        bt2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this,ButtonActivity.class);
                 startActivity(intent);
             }
         });
